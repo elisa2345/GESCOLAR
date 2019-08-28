@@ -3,7 +3,7 @@
 <html>
 <head>
 <link href= "css/estilo" type = "text/css" rel= "stylesheet"/>
-<head>
+</head>
 <body>
 <div id="global">
 <h1>Gescolar</h1>
