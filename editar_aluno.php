@@ -33,6 +33,7 @@ if (isset($_REQUEST['atualizar']))
 }
 ?>
 <link href ="css/estilo.css" type="text/css" rel="stylesheet"/>
+<?php include_once 'includes/cabecalho.php' ?>
 <div>
 <fieldset>
 <legend>Cadastro Alunos</legend>

@@ -3,6 +3,7 @@
 <html>
 <head>
 <link href= "css/estilo" type = "text/css" rel= "stylesheet"/>
+<?php include_once 'includes/cabecalho.php' ?>
 </head>
 <body>
 <div id="global">
