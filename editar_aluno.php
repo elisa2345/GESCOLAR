@@ -11,8 +11,7 @@ if (isset($_REQUEST['atualizar']))
     $sql =  "UPDATE alunos (nome,data_nascimento,sexo
                                  genero,cpf,cidade,estado,bairro,
                                  rua,cep)
-                                 VALUES (?,?,?,?,?,?,?,?,?,?)";
-                                 
+                                WHERE id = ?";                                 
   $stmt = $conexao->prepare($sql);
   $stmt->bindParam(1,$_REQUEST['nome']);     
   $stmt->bindParam(2,$_REQUEST['data_nascimento']);  
@@ -27,7 +26,21 @@ if (isset($_REQUEST['atualizar']))
   $stmt->execute();
   
   
- } catch(Exception $e) {
+ } 
+ 
+    if ( isset($_REQUEST['excluir']))
+ {
+     $stmt = $conexao-> prepare("DELETE FROM aluno WHERE id = ?");
+     $stmt -> bindParam(1, $_request['id_aluno']);
+     $stmt->execute();
+     header("location:lista_alunos.php");
+ } 
+  $stmt = $conexao-> prepare("SELECT * FROM aluno WHERE id = ?");
+  $stmt_>bindParam(1,$_REQUEST['id_aluno']);
+  $stmt-> execute();
+  $aluno = $stmt-> fechObject();
+
+  catch(Exception $e) {
      echo $e->getMessage();
  }
 }
