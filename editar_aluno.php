@@ -2,11 +2,13 @@
 /**
  * Arquivo para registrar os dados de um aluno no banco de dados.
  */
-if (isset($_REQUEST['atualizar']))
-{
+
   try 
 {
     include ' includes/conexao.php';
+
+    if (isset($_REQUEST['atualizar']))
+{
 
     $sql =  "UPDATE alunos (nome,data_nascimento,sexo
                                  genero,cpf,cidade,estado,bairro,
