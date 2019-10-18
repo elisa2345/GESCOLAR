@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<<!DOCTYPE html>
 <html>
 <head>
-<link href= "css/estilo" type = "text/css" rel= "stylesheet"/>
+<link href= "css/estilos.css" type = "text/css" rel= "stylesheet"/>
 <?php include_once 'includes/cabecalho.php' ?>
 </head>
 <body>

@@ -14,7 +14,7 @@
   */
   try {
       $usuario = "root"; // usuário do MySQL.
-      $senha = " "; //senha do MYSQL.
+      $senha = "1234"; //senha do MYSQL.
       $host = "localhost"; // host onde o servidor My sql esta sendo executado .
       $bd = "gescolar "; // nome do bd.
     // aqui vamos definir configurações para o tratamentamento de errros e acentos.
